@@ -7,6 +7,7 @@ Using GitHub REST API for repository https://github.com/Fantomas42/django-blog-z
 write tests for next cases:
 - Amount of open and closed pull requests
 - List of branches and schema of response
+
 Task #2
 Using Selenium Webdriver for https://www.google.com/ write next tests:
 - Check that all most important elements are present
