@@ -30,8 +30,6 @@ class MainPageGoogle(BasePage):
     def should_be_change_language_area(self):
         assert self.is_element_present(*MainPageLocators.CHANGE_LANGUAGE_AREA), 'Change language area is not presented'
 
-    text = 'Search somthing'
-
     def search_text(self, text):
 
         self.browser.find_element(*MainPageLocators.SEARCH_LINE).send_keys(text)

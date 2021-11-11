@@ -1,7 +1,8 @@
-# Test_task_Tracki
+# Test_tasks
 Description
 Write tests for testing GitHub's REST API and google.com using Python version 3+ and
 Selenium Webdriver
+
 Task #1
 Using GitHub REST API for repository https://github.com/Fantomas42/django-blog-zinnia
 write tests for next cases:
