@@ -1,4 +1,4 @@
-from .pages.main_page_google import MainPageGoogle
+from .google_com_pages.main_page_google import MainPageGoogle
 
 def test_elements_is_present(browser):
     link = 'https://www.google.com/'
