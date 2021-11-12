@@ -36,8 +36,6 @@ def count_closed_pulls():
 
     return count_close
 
-
-
 class TestsCountsPullRequests:
     def test_status_code(self):
         username = 'Fantomas42'

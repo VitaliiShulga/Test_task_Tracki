@@ -1,14 +1,12 @@
 import requests
 from jsonschema import validate
 
-
 def get_branches():
     username = 'Fantomas42'
     repo = 'django-blog-zinnia'
     url = f'https://api.github.com/repos/{username}/{repo}/branches'
     data = requests.get(url).json()
     return data
-
 
 def validate_response():
     # Describe what kind of json we expect.
@@ -29,9 +27,6 @@ def validate_response():
     for response in get_branches():
         validate(response, schema=schema)
     print('\n', get_branches())
-
-
-# validate_response()
 
 
 class TestsListOfBranchesAndSchemaOfResponse:
