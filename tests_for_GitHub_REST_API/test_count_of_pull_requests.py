@@ -39,6 +39,13 @@ def count_closed_pulls():
 
 
 class TestsCountsPullRequests:
+    def test_status_code(self):
+        username = 'Fantomas42'
+        repo = 'django-blog-zinnia'
+        url = f'https://api.github.com/repos/{username}/{repo}/pulls'
+        status = requests.get(url).status_code
+        assert status == 200, f"Status code = {status} it is not 200"
+
     def test_count_of_open_pull_requests(self):
         self.driver = webdriver.Chrome()
         self.driver.get('https://github.com/Fantomas42/django-blog-zinnia/pulls')
