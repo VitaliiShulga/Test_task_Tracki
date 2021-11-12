@@ -37,8 +37,5 @@ class TestsListOfBranchesAndSchemaOfResponse:
         status = requests.get(url).status_code
         assert status == 200, f"Status code {status} it is not 200"
 
-    def test_branches_and_schema(self):
+    def test_list_of_branches_and_response_validation(self):
         validate_response()
-
-
-

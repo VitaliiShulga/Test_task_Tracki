@@ -12,6 +12,7 @@ def count_open_pulls():
         for key, value in request.items():
             if key == 'state' and value == 'open':
                 count_open += 1
+    print('\n', 'Count of open pull ', count_open)
     return count_open
 
 def count_closed_pulls():
@@ -33,7 +34,7 @@ def count_closed_pulls():
         for key, value in request.items():
             if key == 'state' and value == 'closed':
                 count_close += 1
-
+    print('\n', 'Count of closed pull ', count_close)
     return count_close
 
 class TestsCountsPullRequests:
